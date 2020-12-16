@@ -29,7 +29,8 @@ cdiiddwpgswtgt
 ```
 
 This does not work as the password to flag00 or level01. Maybe it's encrypted?
-We run the string through a simple Ceasar cipher <https://www.dcode.fr/caesar-cipher (edited) > and the top result is:
+
+We run the string through a simple Ceasar cipher https://www.dcode.fr/caesar-cipher and the top result is:
 **nottoohardhere**
 
 Let's try to log in to user flag00...
