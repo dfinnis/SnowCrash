@@ -14,7 +14,7 @@ Let's log in from a separate shell.
 ssh level00@192.168.0.15 -p 4242
 ```
 
-List all files belonging to user flag00, decluttering output by redirecting error messages to /dev/null. 
+Find all files belonging to user *flag00*, decluttering output by redirecting error messages to /dev/null. 
 ```
 level00@SnowCrash:~$ find / -user flag00 2>/dev/null
 /usr/sbin/john
