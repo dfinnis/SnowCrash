@@ -1,13 +1,13 @@
 # Level 00 walkthrough
 
-## VULNERABILITY
-password decryption
+## Vulnerability
+weak password ecryption
 
-## CONTEXT
+## Context
 In the subject, we are given the following hint:
-"Find the password that will log you in with the "flag00" account."
+*Find the password that will log you in with the "flag00" account.*
 
-## SOLUTION
+## Solution
 
 Let's log in from a separate shell.
 ```
@@ -30,7 +30,7 @@ cdiiddwpgswtgt
 
 This does not work as the password to flag00 or level01. Maybe it's encrypted?
 
-We run the string through a simple Ceasar cipher https://www.dcode.fr/caesar-cipher and the top result is:
+We run the string through a simple Ceasar cipher https://www.dcode.fr/caesar-cipher. the top result is:
 **nottoohardhere**
 
 Let's try to log in to user flag00...
