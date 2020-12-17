@@ -3,8 +3,6 @@
 ## Vulnerability
 Password stored in publicly readable file, weak encryption
 
-## Context
-
 ## Solution
 First step, look for flag01 password.
 For some reason we have read rights on /etc/passwd...
