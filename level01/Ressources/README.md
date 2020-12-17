@@ -23,7 +23,7 @@ level01@SnowCrash:~$ grep 'flag01' /etc/passwd | cut -d ':' -f 2
 
 Copy the password to your home machine (outside of the VM). 
 ```
-scp -P4242 level02@{VM_IP}:/etc/passwd vm_passwd
+scp -P4242 level01@{VM_IP}:/etc/passwd vm_passwd
 ```
 
 Cut out user flag01's password and save in a new file. 
