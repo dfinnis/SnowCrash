@@ -10,29 +10,28 @@ In our home directory, we see a .pcap file, which contains packet data captured 
 
 Copy the password from the VM to your home machine, and change the permissions. 
 ```
-scp -P4242 level02@{VM_IP}:/home/user/level02/level02.pcap level02.pcap
-chmod 755 level02.pcap
+>$ scp -P4242 level02@{VM_IP}:/home/user/level02/level02.pcap level02.pcap
+>$ chmod 755 level02.pcap
 ```
 
 Install Wireshark, a network protocol analyzer that we will use to read the packets. 
 ```
-brew install wireshark
-tshark -o data.show_as_text:TRUE -T fields -e data.text -r level02.pcap
--e Add a field to the list of fields to display
--o preference:value
--r read_file
--T Set the format of the output when viewing decoded packet data
+>$ brew install wireshark
+>$ tshark -o data.show_as_text:TRUE -T fields -e data.text -r level02.pcap
 ```
-It looks like the password is ft_wandrNDRelLOL
-
+It looks like the password is at the end of this output, but it's not quite readable... Let's clean that up.
+```
+>$ tshark -o data.show_as_text:TRUE -T fields -e data.text -r level02.pcap | tr -cd '\47-\176' | tail -c 18 | head -c 16
+ft_wandrNDRelL0L
+```
 
 Let's try to log in to user flag02...
 ```
-level01@SnowCrash:~$ su flag02
-Password: ft_wandrNDRelLOL
+level02@SnowCrash:~$ su flag02
+Password: ft_wandrNDRelL0L
 ```
 Run getflag!
 ```
-flag01@SnowCrash:~$ getflag
-Check flag.Here is your token : 
+flag02@SnowCrash:~$ getflag
+Check flag.Here is your token : kooda2puivaav1idi4f57q8iq
 ```
