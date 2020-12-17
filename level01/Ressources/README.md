@@ -13,7 +13,7 @@ level01@SnowCrash:~$ ls -l /etc/ | grep 'passwd'
 -rw-r--r-- 1 root root    2477 Mar  5  2016 passwd
 ```
 
-This is where user passwords are stored. Let's look inside. 
+This is where user account details are stored. Let's look inside. 
 ```
 level01@SnowCrash:~$ grep 'flag01' /etc/passwd
 flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
