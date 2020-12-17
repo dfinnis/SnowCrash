@@ -1,4 +1,4 @@
-# Level 00 walkthrough
+# Level 00
 
 ## Vulnerability
 weak password ecryption
