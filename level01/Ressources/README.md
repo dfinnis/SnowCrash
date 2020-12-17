@@ -38,9 +38,8 @@ cd john/src
 ./configure LDFLAGS=-L$HOME/.brew/opt/openssl/lib CPPFLAGS=-I$HOME/.brew/opt/openssl/include
 make -s clean && make -sj4
 cd ../run
-./john --show ../../password
+./john ../../password
 abcdefg
-1 password hash cracked, 0 left
 ```
 
 Let's try to log in to user flag01...
