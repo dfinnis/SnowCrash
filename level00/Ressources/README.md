@@ -21,7 +21,7 @@ level00@SnowCrash:~$ find / -user flag00 2>/dev/null
 /rofs/usr/sbin/john
 ```
 
-Cat the contents of those files.
+Cat those files.
 ```
 level00@SnowCrash:~$ cat `find / -user flag00 2>/dev/null`
 cdiiddwpgswtgt
@@ -30,7 +30,7 @@ cdiiddwpgswtgt
 
 This does not work as the password to flag00 or level01. Maybe it's encrypted?
 
-We run the string through a simple Ceasar cipher https://www.dcode.fr/caesar-cipher. the top result is:
+We run the string through a simple [Ceasar cipher](https://www.dcode.fr/caesar-cipher). The top result is:
 **nottoohardhere**
 
 Let's try to log in to user flag00...
