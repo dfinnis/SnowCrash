@@ -22,14 +22,15 @@ Install Wireshark, a network protocol analyzer, and use it to read the packets f
 It looks like the password is at the end of this output, but it's not quite readable... Let's clean that up.
 ```
 >$ tshark -o data.show_as_text:TRUE -T fields -e data.text -r level02.pcap | tr -cd '\47-\177' | tail -c 22 | head -c 20 | xargs
-ft_wandrNDRelL0L
+ft_waNDReL0L
 ```
 
 Let's try to log in to user flag02...
 ```
 level02@SnowCrash:~$ su flag02
-Password: ft_wandrNDRelL0L
 ```
+Password: ft_waNDReL0L
+
 Run getflag!
 ```
 flag02@SnowCrash:~$ getflag
