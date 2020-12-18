@@ -14,7 +14,7 @@ Copy the password from the VM to your home machine, and change the permissions.
 >$ chmod 755 level02.pcap
 ```
 
-Install Wireshark, a network protocol analyzer that we will use to read the packets. 
+Install Wireshark, a network protocol analyzer, and use it to read the packets from the pcap file. 
 ```
 >$ brew install wireshark
 >$ tshark -o data.show_as_text:TRUE -T fields -e data.text -r level02.pcap
