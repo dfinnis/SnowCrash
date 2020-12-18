@@ -28,9 +28,8 @@ ft_waNDReL0L
 Let's try to log in to user flag02...
 ```
 level02@SnowCrash:~$ su flag02
-```
 Password: ft_waNDReL0L
-
+```
 Run getflag!
 ```
 flag02@SnowCrash:~$ getflag
