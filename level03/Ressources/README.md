@@ -1,9 +1,10 @@
 # Level 03
 
 ## Vulnerability
+Privilege escalation, exploit SUID program by using environment variables
 
 ## Context
-In our home directory, we find a binary. 
+In our home directory, we find a binary ```level03```
 
 ## Solution
 ```
