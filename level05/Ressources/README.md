@@ -4,7 +4,7 @@
 Privilege escalation, cron
 
 ## Context
-when we ssh log in directly to level05, we see the message ```You have new mail.```
+When we ssh log in directly to level05, we see the message ```You have new mail.```
 
 ## Solution
 Lets investigate the mail hint. Cron on MacOS saves mail to /var/mail/{user}.
