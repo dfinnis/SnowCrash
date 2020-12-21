@@ -14,7 +14,7 @@ level07@SnowCrash:~$  ls -l
 
 Let's see what's in the level07 executable file. 
 ```
-level07@SnowCrash:~$ nm -u level07
+level07@SnowCrash:~$ strings level07
 [...]
 LOGNAME
 /bin/echo %s
