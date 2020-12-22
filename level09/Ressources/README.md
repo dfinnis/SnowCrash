@@ -30,3 +30,11 @@ level09@SnowCrash:~$ ./level09 12345
 13579
 ```
 It looks like the executable expects a string as the first argument, and outputs that string with each character rotated [char + index in string].
+
+We can create a simple C file to decrypt this. 
+```
+level09@SnowCrash:~$ gcc decrypt.c -o decrypt
+level09@SnowCrash:~$ ./decrypt `cat token`
+Flag09 password : f3iji1ju5yuevaus41q1afiuq
+```
+Et voilà ! 
