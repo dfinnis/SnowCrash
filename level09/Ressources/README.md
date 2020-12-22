@@ -25,10 +25,10 @@ tpmhr
 ```
 Strange. Let's experiment by passing some other input to the executable. 
 ```
-level09@SnowCrash:~$ ./level09 abcdef
-acegik
-level09@SnowCrash:~$ ./level09 12345
-13579
+level09@SnowCrash:~$ ./level09 aaaaa
+abcde
+level09@SnowCrash:~$ ./level09 11111
+12345
 ```
 It looks like the executable expects a string as the first argument, and outputs that string with each character rotated [char + index in string].
 
