@@ -15,13 +15,18 @@ f4kmm6p|=�p�n��DB�Du{��
 ```
 
 ## Solution
-
-Let's pass some other input to the binary to see what happens. 
+Let's see what the executable does.
 ```
-level09@SnowCrash:~$ ./level09 "oh hi"
-oi"km
+level09@SnowCrash:~$ ./level09
+You need to provide only one arg.
+level09@SnowCrash:~$ ./level09 token
+tpmhr
+```
+Strange. Let's experiment by passing some other input to the executable. 
+```
 level09@SnowCrash:~$ ./level09 abcdef
 acegik
 level09@SnowCrash:~$ ./level09 12345
 13579
 ```
+It looks like the executable expects a string as the first argument, and outputs that string with each character rotated [char + index in string].
