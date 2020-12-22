@@ -37,4 +37,11 @@ level09@SnowCrash:~$ gcc decrypt.c -o decrypt
 level09@SnowCrash:~$ ./decrypt `cat token`
 Flag09 password : f3iji1ju5yuevaus41q1afiuq
 ```
-Et voilà ! 
+Et voilà ! Let's use this to log into flag09.
+```
+level09@SnowCrash:~$ su flag09
+Password: f3iji1ju5yuevaus41q1afiuq
+Don't forget to launch getflag !
+flag09@SnowCrash:~$ getflag
+Check flag.Here is your token : s5cAJpM8ev6XHw998pRWG728z
+```
