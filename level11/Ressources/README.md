@@ -48,9 +48,9 @@ while 1 do
   client:close()
 end
 ```
-We can see this program waits for a connection with the server running on 127.0.0.1 (hostname) 5151 (port).
-It will prompt for a password and pass anything we write to a hashing function.
-Let's see if we can exploit that, by tricking it to run ```getflag``` in the place of the password. 
+We can see this program waits for a connection with the server running on 127.0.0.1 (hostname) 5151 (port).<br/>
+It will prompt for a password and pass anything we write to a hashing function.<br/>
+Let's see if we can exploit that, by tricking it to run ```getflag``` in the place of the password. <br/>
 
 We'll use ```nc``` to establish a TCP connection with remote server. 
 ```
