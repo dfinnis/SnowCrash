@@ -23,3 +23,15 @@ level13@SnowCrash:~$ echo $UID
 ```
 Unforunately, you cannot change your user's UID when it is logged in a session. <br/>
 We're going to have to find another way. 
+Let's try
+```
+level13@SnowCrash:~$ gdb ./level13
+[...]
+(gdb) attach process_id
+Illegal process-id: process_id.
+(gdb) call putenv ("UID=4242")
+No symbol table is loaded.  Use the "file" command.
+```
+GDB is telling you is that your binary does not have any debugging info in it.<br/>
+Without debug info, certain commands will not work. But others will. <br/>
+Let's try something else. 
