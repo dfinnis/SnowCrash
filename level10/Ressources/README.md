@@ -6,11 +6,13 @@ Privilege escalation - symlink
 Access call
 
 ## Context
+We find a binary and a token
 ```
 level10@SnowCrash:~$ ls -l
 -rwsr-sr-x+ 1 flag10 level10 10817 Mar  5  2016 level10
 -rw-------  1 flag10 flag10     26 Mar  5  2016 token
 ```
+When we run the binary it tells us it tells us it sends given file to host.
 ```
 level10@SnowCrash:~$ ./level10
 ./level10 file host
