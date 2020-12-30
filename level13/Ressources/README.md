@@ -1,6 +1,7 @@
 # Level 13
 
 ## Vulnerability
+Privilege escalation via register manipulation using gdb
 
 ## Context
 ```
