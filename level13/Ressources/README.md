@@ -60,7 +60,6 @@ $1 = 4242
 Great! Let's resume the program.
 ```
 (gdb) cont
-(gdb) cont
 Continuing.
 your token is 2A31L79asukciNyi8uppkEuSx
 ```
