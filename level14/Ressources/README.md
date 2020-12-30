@@ -23,7 +23,7 @@ Then inspect it using [IDA](https://www.hex-rays.com/products/ida/support/downlo
 
 We find 15 calls to ft_des, these could correspond to the 15 passwords.
 
-Lets have a look at the corresponding memory addresses in gdb
+Lets have a look at the corresponding memory addresses in gdb. Create a breakpoint in the main, run it, and jump to memory address.
 ```
 level14@SnowCrash:~$ gdb getflag
 ...
