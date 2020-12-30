@@ -44,3 +44,24 @@ Let's dump the assembler code.
    0x0804859a <+14>:	cmp    $0x1092,%eax
 [...]
 ```
+It looks like...
+Let's try to change the value of eax directly.
+```
+(gdb) break *main+14
+(gdb) r
+Starting program: /home/user/level13/level13
+
+Breakpoint 1, 0x0804859a in main ()
+(gdb) set $eax=4242
+(gdb) print $eax
+$1 = 4242
+```
+Great! Let's resume the program.
+```
+(gdb) cont
+(gdb) cont
+Continuing.
+your token is 2A31L79asukciNyi8uppkEuSx
+```
+Success!
+
