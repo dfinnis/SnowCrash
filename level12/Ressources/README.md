@@ -45,9 +45,9 @@ n(t(param("x"), param("y")));
 ```
 This program uses CGI (Common Gateway Interface) to execute a shellscript.<br/>
 Here's what that would look like in a navigator:<br/>
-http://${VM_IP}:4646/?x={shellscript}<br/>
+```http://${VM_IP}:4646/?x={shellscript}<br/>```
 
-In the program, our script is evaluated in the $xx variable... which is what we will exploit!<br/>
+In the program, the shellscript is evaluated in the $xx variable... which we can exploit!<br/>
 The regex will capitalize the $xx argument, so we if we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.<br/>
 Linux is case-sensitive, so it will fail to recognize a filepath in capital case. <br/>
 Let's try writing our script to a file. 
