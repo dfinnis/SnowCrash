@@ -23,13 +23,15 @@ level13@SnowCrash:~$ echo $UID
 ```
 Unforunately, you cannot change your user's UID when it is logged in a session. <br/>
 We're going to have to find another way. 
-Let's try
+We can use gdb to change the owner of a currently running process, like this:
 ```
 level13@SnowCrash:~$ gdb ./level13
-[...]
 (gdb) attach process_id
-Illegal process-id: process_id.
 (gdb) call putenv ("UID=4242")
+(gdb) detach
+```
+Unfortunately, when we try this we get the following message:
+```
 No symbol table is loaded.  Use the "file" command.
 ```
 GDB is telling you is that your binary does not have any debugging info in it.<br/>
