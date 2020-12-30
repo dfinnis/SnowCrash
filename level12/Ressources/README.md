@@ -6,7 +6,6 @@ Privilege escalation via CGI code injection
 ## Context
 ```
 level12@SnowCrash:~$ ls -l
-total 4
 -rwsr-sr-x+ 1 flag12 level12 464 Mar  5  2016 level12.pl
 ```
 ## Solution
