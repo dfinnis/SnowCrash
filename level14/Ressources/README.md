@@ -37,7 +37,7 @@ Breakpoint 1, 0x0804894a in main ()
 Continuing at 0x8048bf3.
 x24ti5gi3x0ol2eh4esiuxias
 ```
-Thats the flag for level00, Great! Searching through the other addresses we find...
+Great, thats the flag for level00. Searching through the other addresses we find...
 ```
 (gdb) ju *0x8048DE5
 Continuing at 0x8048de5.
