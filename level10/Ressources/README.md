@@ -68,9 +68,9 @@ woupa2yuojeeaaed06riuj63c
 ```
 Great!
 ```
-level10@SnowCrash:~$ su flag11
+level10@SnowCrash:~$ su flag10
 Password:
 Don't forget to launch getflag !
-flag11@SnowCrash:~$ getflag
-Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
+flag10@SnowCrash:~$ getflag
+Check flag.Here is your token : feulo4b72j7edeahuete3no7c
 ```
