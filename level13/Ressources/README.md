@@ -35,5 +35,5 @@ Unfortunately, when we try this we get the following message:
 No symbol table is loaded.  Use the "file" command.
 ```
 GDB is telling you is that your binary has been stripped of debugging symbols (a.k.a. debug info).<br/>
-Without debug info, certain commands will not work. But others will. <br/>
+Without debug info, you can only debug at the ASM level.
 Let's try something else. 
