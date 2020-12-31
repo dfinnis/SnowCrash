@@ -4,12 +4,12 @@
 getflag binary
 
 ## Context
-No shortcuts to call getflag, so we'll have to find a vulnerability in the getflag binary itself
+No shortcuts to call getflag, so we'll have to find a vulnerability in the getflag binary itself.
 
 ## Solution
 Fancy a hint?
 ```
-flag14@SnowCrash:~$ gdb getflag
+level14@SnowCrash:~$ gdb getflag
 ...
 (gdb) run
 Starting program: /bin/getflag
@@ -21,9 +21,9 @@ scp -P 4242 scp://level00@{VM_IP}/../../../bin/getflag getflag
 ```
 Then inspect it using [IDA](https://www.hex-rays.com/products/ida/support/download_freeware/)
 
-We find 15 calls to ft_des, these could correspond to the 15 passwords.
+We find 15 calls to ft_des, these could correspond to the 15 flags.
 
-Lets have a look at the corresponding memory addresses in gdb. Create a breakpoint in the main, run it, and jump to memory address.
+Let's have a look at the corresponding memory addresses in gdb. Create a breakpoint in the main, run it, and jump to memory address.
 ```
 level14@SnowCrash:~$ gdb getflag
 ...
@@ -37,7 +37,7 @@ Breakpoint 1, 0x0804894a in main ()
 Continuing at 0x8048bf3.
 x24ti5gi3x0ol2eh4esiuxias
 ```
-Great, thats the flag for level00. Searching through the other addresses we find...
+Great, that's the flag for level00. Searching through the other addresses we find...
 ```
 (gdb) ju *0x8048DE5
 Continuing at 0x8048de5.
