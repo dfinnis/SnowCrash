@@ -1,7 +1,7 @@
 # Level 00
 
 ## Vulnerability
-weak password ecryption
+Weak password ecryption
 
 ## Context
 In the subject, we are given the following hint:
