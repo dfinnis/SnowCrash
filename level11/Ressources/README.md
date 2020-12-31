@@ -1,7 +1,7 @@
 # Level 11
 
 ## Vulnerability
-Privilege escalation via code injection
+Privilege escalation - code injection
 
 ## Context
 ```

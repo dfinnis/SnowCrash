@@ -4,7 +4,7 @@
 getflag binary
 
 ## Context
-No shortcuts to call getflag, so we'll have to find a vulnerability in the getflag binary itself.
+No shortcuts to call getflag here, so we'll have to find a vulnerability in the getflag binary itself.
 
 ## Solution
 Fancy a hint?

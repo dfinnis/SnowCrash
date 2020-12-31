@@ -1,12 +1,12 @@
 # Level 10
 
 ## Vulnerability
-Privilege escalation - symlink
+Privilege escalation - symlink attack
 
-Access call
+Binary ```level10``` calls access then open
 
 ## Context
-We find a binary and a token
+We find a binary and a token.
 ```
 level10@SnowCrash:~$ ls -l
 -rwsr-sr-x+ 1 flag10 level10 10817 Mar  5  2016 level10

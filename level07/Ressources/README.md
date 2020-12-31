@@ -1,7 +1,7 @@
 # Level 07
 
 ## Vulnerability
-Privilege escalation via environment variables
+Privilege escalation - environment variables
 
 ## Context
 

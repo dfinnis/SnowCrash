@@ -1,7 +1,7 @@
 # Level 08
 
 ## Vulnerability
-Privilege escalation - suid.
+Privilege escalation - weak filename check
 
 ## Context
 ```

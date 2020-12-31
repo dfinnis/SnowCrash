@@ -1,7 +1,7 @@
 # Level 05
 
 ## Vulnerability
-Privilege escalation, cron
+Privilege escalation - cron
 
 ## Context
 When we ssh log in directly to level05, we see the message ```You have new mail.```

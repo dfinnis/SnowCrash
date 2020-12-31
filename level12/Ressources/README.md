@@ -1,7 +1,7 @@
 # Level 12
 
 ## Vulnerability
-Privilege escalation via CGI code injection
+Privilege escalation - CGI code injection
 
 ## Context
 ```

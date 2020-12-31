@@ -1,7 +1,7 @@
 # Level 04
 
 ## Vulnerability
-Privilege escalation, CGI code injection
+Privilege escalation - CGI code injection
 
 ## Context
 In our home directory, we find a binary ```level04.pl```
