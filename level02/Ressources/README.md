@@ -1,7 +1,7 @@
 # Level 02
 
 ## Vulnerability
-packet capture & password sniffing
+Packet capture & password sniffing
 
 ## Context
 In our home directory, we see a .pcap file, which contains packet data captured over a network.
