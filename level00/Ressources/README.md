@@ -11,7 +11,7 @@ In the subject, we are given the following hint:
 
 Let's log in from a separate shell.
 ```
-ssh level00@192.168.0.15 -p 4242
+ssh level00@{VM_IP} -p 4242
 ```
 
 Find all files belonging to user *flag00*, decluttering output by redirecting error messages to /dev/null. 
