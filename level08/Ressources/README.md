@@ -17,8 +17,8 @@ level08@SnowCrash:~$ ./level08
 ```
 Ok lets create a file to read.
 ```
-level08@SnowCrash:~$ echo "oh hi" > hi
-level08@SnowCrash:~$ ./level08 hi
+level08@SnowCrash:~$ echo "oh hi" > /dev/shm/hi
+level08@SnowCrash:~$ ./level08 /dev/shm/hi
 oh hi
 ```
 Looks like the binary ```level08``` prints the contents of a file given as argument. We don't have permissions to read token directly, will ```level08``` read ```token``` for us?
