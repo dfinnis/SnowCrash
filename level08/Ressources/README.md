@@ -35,10 +35,10 @@ printf("You may not access '%s'\n", "token"You may not access 'token'
 )                = 27
 exit(1 <unfinished ...>
 ```
-It seems like it calls strstr to see if "token" is contained in the filename, and rejects access if true. So what if we simply change the filename? (An alternative is to create a symlink ```ln -s token password```)
+It seems like it calls strstr to see if "token" is contained in the filename, and rejects access if true. So let's create a symlink to token, named anything other than token.
 ```
-level08@SnowCrash:~$ mv token password
-level08@SnowCrash:~$ ./level08 password
+level08@SnowCrash:~$ ln -s ~/token /tmp/password
+level08@SnowCrash:~$ ./level08 /tmp/password
 quif5eloekouj29ke0vouxean
 ```
 Great! Lets log in to flag08 and launch getflag.
