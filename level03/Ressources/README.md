@@ -30,7 +30,7 @@ Let's confirm where the getflag is.
 ```
 level03@SnowCrash:~$ ls -l /bin | grep "getflag"
 -rwxr-xr-x 1 root root   11833 Aug 30  2015 getflag
-level03@SnowCrash:~$ cd bin; ./getflag
+level03@SnowCrash:~$ ../../../bin/getflag
 Check flag.Here is your token :
 Nope there is no token here for you sorry. Try again :)
 ```
