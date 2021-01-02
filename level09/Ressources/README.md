@@ -47,10 +47,20 @@ int main(int ac, char **argv)
 	return (1);
 }
 ```
-If we compile and run with the token we find the decrypted password.
+Let's save the VM level09 token to our local machine.
 ```
-level09@SnowCrash:~$ gcc decrypt.c -o decrypt
-level09@SnowCrash:~$ ./decrypt `cat token`
+>$ scp -P 4242 level09@192.168.0.15:token token
+
+[... VM prompt for level09 password...]
+password: 25749xKZ8L7DkSCwJkT9dyv6f
+
+>$ ls
+decrypt.c token
+```
+Then we compile ```decrypt.c``` and run with the token to find the decrypted password.
+```
+>$ gcc decrypt.c -o decrypt
+>$ ./decrypt `cat token`
 Flag09 password : f3iji1ju5yuevaus41q1afiuq
 ```
 Et voilà ! Let's use this to log into flag09.
