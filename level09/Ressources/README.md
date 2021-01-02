@@ -32,7 +32,22 @@ level09@SnowCrash:~$ ./level09 11111
 ```
 It looks like the executable expects a string as the first argument, and outputs that string with each character rotated [char + index in string].
 
-We can create a simple C file to decrypt this. 
+We can create a simple C file to decrypt this:
+```
+#include <stdio.h>
+#include <unistd.h>
+int main(int ac, char **argv)
+{
+	if (ac != 2)
+		return (0);
+	int i = -1;
+	while (argv[1][++i])
+		argv[1][i] -= i;
+	printf("Flag09 password : %s\n", argv[1]);
+	return (1);
+}
+```
+If we compile and run with the token we find the decrypted password.
 ```
 level09@SnowCrash:~$ gcc decrypt.c -o decrypt
 level09@SnowCrash:~$ ./decrypt `cat token`
