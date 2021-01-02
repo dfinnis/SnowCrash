@@ -4,14 +4,15 @@
 Privilege escalation - environment variables
 
 ## Context
-In our home directory, we find a binary ```level03```
-
-## Solution
+In our home directory, we find a binary
 ```
 level03@SnowCrash:~$ ls -l
 -rwsr-sr-x 1 flag03 level03 8627 Mar  5  2016 level03
 ```
-Here we see that when we run this binary, we run it with flag03 permissions (as indicated by the 's' for setuid after  '-rw').
+
+## Solution
+
+When we run this binary, we run it with flag03 permissions (as indicated by the 's' for setuid after  '-rw').
 We don't have the permissions to run ```getflag``` directly, but maybe we can use the `./level03` binary to run ```getflag``` for us. 
 Let's run the file. 
 ```
