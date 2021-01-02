@@ -56,6 +56,7 @@ password: 25749xKZ8L7DkSCwJkT9dyv6f
 
 >$ ls
 decrypt.c token
+>$ chmod 755 token
 ```
 Then we compile ```decrypt.c``` and run with the token to find the decrypted password.
 ```
