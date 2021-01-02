@@ -32,7 +32,7 @@ level09@SnowCrash:~$ ./level09 11111
 ```
 It looks like the executable expects a string as the first argument, and outputs that string with each character rotated [char + index in string].
 
-We can create a simple C file to decrypt this:
+We can create a simple C file ```decrypt.c``` to decrypt this:
 ```
 #include <stdio.h>
 #include <unistd.h>
@@ -49,7 +49,7 @@ int main(int ac, char **argv)
 ```
 Let's save the VM level09 token to our local machine.
 ```
->$ scp -P 4242 level09@192.168.0.15:token token
+>$ scp -P 4242 level09@{VM_IP}:token token
 
 [... VM prompt for level09 password...]
 password: 25749xKZ8L7DkSCwJkT9dyv6f
