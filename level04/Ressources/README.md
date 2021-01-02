@@ -31,7 +31,7 @@ So we should run this script with one argument "x". Lets try an example.
 level04@SnowCrash:~$ ./level04.pl x="whoami"
 whoami
 ```
-if we use backtick notation, we can pass a command and ensure it's run and its output captured and echoed.
+If we use backtick notation, we can pass a command and ensure it's run and its output captured and echoed.
 ```
 level04@SnowCrash:~$ ./level04.pl x=`whoami`
 level04
