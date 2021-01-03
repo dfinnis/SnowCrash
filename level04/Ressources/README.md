@@ -6,7 +6,7 @@ Privilege escalation - CGI code injection
 
 ## Context
 
-In our home directory, we find a binary ```level04.pl```
+In our home directory, we find a binary
 ```
 level04@SnowCrash:~$ ls -l
 -rwsr-sr-x 1 flag04 level04 152 Mar  5  2016 level04.pl
