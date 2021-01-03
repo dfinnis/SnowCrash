@@ -1,17 +1,20 @@
 # Level 01
 
 ## Vulnerability
+
 Password stored in publicly readable file, weak encryption
 
-## Solution
-First step, look for flag01 password.
-For some reason we have read rights on /etc/passwd...
+## Context
+
+Nothing in the home folder, but for some reason we have read rights on /etc/passwd...
 ```
 level01@SnowCrash:~$ ls -l /etc/ | grep 'passwd'
 -rw-r--r-- 1 root root    2477 Mar  5  2016 passwd
 ```
 
-This is where user account details are stored. Let's look inside. 
+## Solution
+
+/etc/passwd stores user account details. Let's look for the password for user ```flag01```. 
 Note: [the second field](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/) is the password.
 ```
 level01@SnowCrash:~$ grep 'flag01' /etc/passwd
