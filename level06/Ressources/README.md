@@ -1,11 +1,13 @@
 # Level 06
 
 ## Vulnerability
+
 Privilege escalation - PHP code injection
 
 Deprecated /e regex modifier in script owned by privileged user
 
 ## Context
+
 ```
 level06@SnowCrash:~$ ls -l
 -rwsr-x---+ 1 flag06 level06 7503 Aug 30  2015 level06
@@ -13,6 +15,7 @@ level06@SnowCrash:~$ ls -l
 ```
 
 ## Solution
+
 The binary ```level06``` is executed as user flag06, thanks to the suid bit. We should be able to exploit this, and have it run getflag for us. Lets look at the .php file and investigate how.
 ```
 level06@SnowCrash:~$ cat level06.php

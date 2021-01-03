@@ -1,6 +1,7 @@
 # Level 09
 
 ## Vulnerability
+
 Ecryption vulnerable to reverse engineering
 
 ## Context
@@ -16,6 +17,7 @@ f4kmm6p|=�p�n��DB�Du{��
 ```
 
 ## Solution
+
 Let's see what the executable does.
 ```
 level09@SnowCrash:~$ ./level09

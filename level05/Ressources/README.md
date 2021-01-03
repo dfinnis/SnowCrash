@@ -1,12 +1,15 @@
 # Level 05
 
 ## Vulnerability
+
 Privilege escalation - cron
 
 ## Context
+
 When we ssh log in directly to level05, we see the message ```You have new mail.```
 
 ## Solution
+
 Lets investigate the mail hint. Cron on MacOS saves mail to /var/mail/{user}.
 ```
 level05@SnowCrash:~$ cat /var/mail/level05

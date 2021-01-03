@@ -1,14 +1,18 @@
 # Level 13
 
 ## Vulnerability
+
 Privilege escalation - register manipulation using gdb
 
 ## Context
+
 ```
 level13@SnowCrash:~$ ls -l
 -rwsr-sr-x 1 flag13 level13 7303 Aug 30  2015 level13
 ```
+
 ## Solution
+
 Looks like a binary. Let's try running it. 
 ```
 level13@SnowCrash:~$ ./level13

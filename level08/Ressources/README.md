@@ -1,9 +1,11 @@
 # Level 08
 
 ## Vulnerability
+
 Privilege escalation - weak filename check
 
 ## Context
+
 ```
 level08@SnowCrash:~$ ls -l
 -rwsr-s---+ 1 flag08 level08 8617 Mar  5  2016 level08
@@ -11,6 +13,7 @@ level08@SnowCrash:~$ ls -l
 ```
 
 ## Solution
+
 ```
 level08@SnowCrash:~$ ./level08
 ./level08 [file to read]

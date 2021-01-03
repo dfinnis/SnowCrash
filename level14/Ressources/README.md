@@ -1,12 +1,15 @@
 # Level 14
 
 ## Vulnerability
+
 getflag binary
 
 ## Context
+
 No shortcuts to call getflag here, so we'll have to find a vulnerability in the getflag binary itself.
 
 ## Solution
+
 Fancy a hint?
 ```
 level14@SnowCrash:~$ gdb getflag
@@ -15,6 +18,7 @@ level14@SnowCrash:~$ gdb getflag
 Starting program: /bin/getflag
 You should not reverse this
 ```
+
 Lets copy the getflag binary outside of the vm
 ```
 scp -P 4242 scp://level00@{VM_IP}/../../../bin/getflag getflag

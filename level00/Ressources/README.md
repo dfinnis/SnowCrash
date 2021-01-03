@@ -1,9 +1,11 @@
 # Level 00
 
 ## Vulnerability
+
 Weak password ecryption
 
 ## Context
+
 In the subject, we are given the following hint:
 *Find the password that will log you in with the "flag00" account.*
 

@@ -1,15 +1,18 @@
 # Level 11
 
 ## Vulnerability
+
 Privilege escalation - code injection
 
 ## Context
+
 ```
 level11@SnowCrash:~$ ls -l
 -rwsr-sr-x 1 flag11 level11 668 Mar  5  2016 level11.lua
 ```
 
 ## Solution
+
 Let's ```cat``` the file and see what we find. 
 ```
 level11@SnowCrash:~$ cat level11.lua

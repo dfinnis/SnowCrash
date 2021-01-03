@@ -1,14 +1,17 @@
 # Level 12
 
 ## Vulnerability
+
 Privilege escalation - CGI code injection
 
 ## Context
+
 ```
 level12@SnowCrash:~$ ls -l
 -rwsr-sr-x+ 1 flag12 level12 464 Mar  5  2016 level12.pl
 ```
 ## Solution
+
 Let's ```cat``` the file and see what we find. 
 ```
 level12@SnowCrash:~$ cat level12.pl

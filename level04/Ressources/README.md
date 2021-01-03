@@ -1,16 +1,19 @@
 # Level 04
 
 ## Vulnerability
+
 Privilege escalation - CGI code injection
 
 ## Context
-In our home directory, we find a binary ```level04.pl```
 
-## Solution
+In our home directory, we find a binary ```level04.pl```
 ```
 level04@SnowCrash:~$ ls -l
 -rwsr-sr-x 1 flag04 level04 152 Mar  5  2016 level04.pl
 ```
+
+## Solution
+
 Here we see that when we run this Perl script, we run it with owner flag04 permissions (setuid bit 's'). We don't have the permissions to run getflag directly, but maybe we can get this Perl script to run getflag for us.
 
 Let's investigate the script.
