@@ -14,7 +14,7 @@ level04@SnowCrash:~$ ls -l
 
 ## Solution
 
-Here we see that when we run this Perl script, we run it with owner flag04 permissions (setuid bit 's'). We don't have the permissions to run getflag directly, but maybe we can get this Perl script to run getflag for us.
+Here we see that when we run this Perl script, we run it with owner ```flag04``` permissions (setuid bit 's'). We don't have the permissions to run getflag directly, but maybe we can get this Perl script to run getflag for us.
 
 Let's investigate the script.
 ```
