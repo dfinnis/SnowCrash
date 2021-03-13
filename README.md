@@ -8,6 +8,9 @@ For each level:
 
 * ```README.md``` how to find password for each level
 
+See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
+
+
 ## Levels Overview
 
 0 - Weak password ecryption
@@ -39,6 +42,7 @@ For each level:
 13 - Register manipulation using gdb
 
 14 - getflag binary
+
 
 ## Virtual Machine setup
 
