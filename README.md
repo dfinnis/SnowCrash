@@ -47,8 +47,6 @@ Log in from a separate shell as user *level00* with password *level00*.
 
 <img src="https://github.com/dfinnis/SnowCrash/blob/master/img/ssh.png" width="500">
 
-Great, we are logged in!
-
 ### Goal
 
 Now we want to find the password for user *flag00*, see [level00/](https://github.com/dfinnis/SnowCrash/tree/master/level00) for how.
