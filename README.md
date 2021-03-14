@@ -13,15 +13,15 @@ See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) 
 
 ## Getting Started
 
-### Virtual Machine setup
-
 First download from 42 [*SnowCrash.iso*](https://projects.intra.42.fr/uploads/document/document/2831/SnowCrash.iso).
+
+### Virtual Machine setup
 
 On Mac OSX, install [VirtualBox](https://www.virtualbox.org/).
 
 In VirtualBox create a new VM (click new).
 
-* Name and operating system - Type: Linux, Version: (Oracle 64-bit).
+* Name and operating system - Type: Linux, Version: (Oracle 64-bit)
 
 Continue through all the next steps with the default settings:
 
