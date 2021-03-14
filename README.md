@@ -65,6 +65,8 @@ Log in as user *level01*.
 
 ```su level01```
 
+<img src="https://github.com/dfinnis/SnowCrash/blob/master/img/su.png" width="500">
+
 This repeats for each level.
 
 
