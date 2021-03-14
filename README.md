@@ -11,6 +11,43 @@ For each level:
 See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
 
 
+## Getting Started
+
+### Virtual Machine setup
+
+First download from 42 [*SnowCrash.iso*](https://projects.intra.42.fr/uploads/document/document/2831/SnowCrash.iso).
+
+On Mac OSX, install [VirtualBox](https://www.virtualbox.org/).
+
+In VirtualBox create a new VM (click new).
+
+* Name and operating system - Type: Linux, Version: (Oracle 64-bit).
+
+Continue through all the next steps with the default settings:
+
+* Memory size: 4MB
+* Hard disk: Create a disk now
+* Hard disk file type: VDI(VirtualBox Disk Image)
+* Storage on physical hard disk: Dynamically allocated
+* File size: 12,00GB
+
+Next click settings > Network > Adapter 1 > Attached to: Bridged Adapter.
+
+Still in settings click Storage > Right of "Controller: IDE" there is a CD icon with a + sign (add optical drive).
+
+Click Add Disk Image, and select *SnowCrash.iso*
+
+Finally click start, it should show the VM IP address and prompt user to login.
+
+### SSH connect
+
+Let's log in from a separate shell as user *level00* with password *level00*.
+
+```ssh level00@{VM_IP} -p 4242```
+
+<img src="https://github.com/dfinnis/SnowCrash/blob/master/img/ssh.png" width="500">
+
+
 ## Levels Overview
 
 0 - Weak password ecryption
@@ -42,21 +79,6 @@ See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) 
 13 - Register manipulation using gdb
 
 14 - getflag binary
-
-
-## Virtual Machine setup
-
-On Mac OSX, install VirtualBox and create a VM
-
-> New VM - Type : Linux - Version : (Oracle 64-bit)
-
-> New VM > settings > Network > Adapter 1 > Attached to: Bridged Adapter
-
-Mount the SnowCrash.iso to the VM:
-
-> New VM > settings > Storage > Under IDE Controller there is a CD icon with a + sign on it...
-
-> click on the CD then select SnowCrash.iso
 
 
 ## Team
