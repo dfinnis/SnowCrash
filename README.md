@@ -38,7 +38,7 @@ Next click Settings > Network > Adapter 1 > Attached to: Bridged Adapter.
 Still in settings click Storage > Right of "Controller: IDE" there is a CD icon with a + sign (add optical drive).
 Click Add Disk Image, and select *SnowCrash.iso*.
 
-Click start to start the VM, once runnning it should show the VM IP address and prompt user to login.
+Click Start to start the VM, once runnning it should show the VM IP address and prompt user to login.
 
 ### SSH connect
 
