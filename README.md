@@ -1,12 +1,12 @@
 # SnowCrash
 
-Discover cyber security through 15 little challenges
+Discover cyber security through 15 little challenges.
 
-For each level:
+In the folder for each level you will find:
 
 * ```flag``` password for next level
 
-* ```README.md``` how to find password for each level
+* ```README.md``` how to find the password
 
 See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
 
@@ -37,15 +37,35 @@ Still in settings click Storage > Right of "Controller: IDE" there is a CD icon 
 
 Click Add Disk Image, and select *SnowCrash.iso*
 
-Finally click start, it should show the VM IP address and prompt user to login.
+Then start the VM (click start), it should show the VM IP address and prompt user to login.
 
 ### SSH connect
 
-Let's log in from a separate shell as user *level00* with password *level00*.
+Log in from a separate shell as user *level00* with password *level00*.
 
 ```ssh level00@{VM_IP} -p 4242```
 
 <img src="https://github.com/dfinnis/SnowCrash/blob/master/img/ssh.png" width="500">
+
+Great, we are logged in!
+
+### Goal
+
+Now we want to find the password for user *flag00*, see [level00/](https://github.com/dfinnis/SnowCrash/tree/master/level00) for how.
+
+Log in as user *flag00*.
+
+```su flag00```
+
+Run *getflag* to find the password for user *level01*.
+
+```getflag```
+
+Log in as user *level01*.
+
+```su level01```
+
+This repeats for each level.
 
 
 ## Levels Overview
