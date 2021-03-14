@@ -4,11 +4,13 @@ Discover cyber security through 15 little challenges.
 
 In the folder for each level you will find:
 
-* ```flag``` password for next level
+* *flag* - password for next level
 
-* ```README.md``` how to find the password
+* *README.md* - how to find the password
 
 See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
+
+#### Final Score 125/100
 
 
 ## Getting Started
@@ -34,10 +36,9 @@ Continue through all the next steps with the default settings:
 Next click settings > Network > Adapter 1 > Attached to: Bridged Adapter.
 
 Still in settings click Storage > Right of "Controller: IDE" there is a CD icon with a + sign (add optical drive).
-
 Click Add Disk Image, and select *SnowCrash.iso*
 
-Then start the VM (click start), it should show the VM IP address and prompt user to login.
+Click start to start the VM, once runnning it should show the VM IP address and prompt user to login.
 
 ### SSH connect
 
@@ -47,9 +48,9 @@ Log in from a separate shell as user *level00* with password *level00*.
 
 <img src="https://github.com/dfinnis/SnowCrash/blob/master/img/ssh.png" width="500">
 
-### Goal
+### Level Up
 
-Now we want to find the password for user *flag00*, see [level00/](https://github.com/dfinnis/SnowCrash/tree/master/level00) for how.
+As user *level00* the goal is to find the password for user *flag00*, see [level00/](https://github.com/dfinnis/SnowCrash/tree/master/level00) for how.
 
 Log in as user *flag00*.
 
@@ -65,7 +66,7 @@ Log in as user *level01*.
 
 <img src="https://github.com/dfinnis/SnowCrash/blob/master/img/su.png" width="500">
 
-This repeats for each level.
+Repeat these steps for each level.
 
 
 ## Levels Overview
