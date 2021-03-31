@@ -4,9 +4,9 @@ Discover cyber security through 15 little challenges.
 
 In the folder for each level you will find:
 
-* *flag* - password for next level
+* **flag** - password for next level
 
-* *README.md* - how to find the password
+* **README.md** - how to find the password
 
 See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
 
