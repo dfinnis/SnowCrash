@@ -10,6 +10,8 @@ In the folder for each level you will find:
 
 See the [subject](https://github.com/dfinnis/SnowCrash/blob/master/subject.pdf) for more details.
 
+For more security fun check out the next projects [RainFall](https://github.com/dfinnis/RainFall) & [OverRide](https://github.com/dfinnis/OverRide).
+
 #### Final Score 125/100
 
 
